@@ -13,12 +13,14 @@ public class VotingPageUI {
 	public static final String PREVIEW_RESULT_LINK = "//div[@id='bResult']/small[text()='Preview result']";
 	public static final String SHOW_DETAIL_LINK = "//div[@id='bDetails']/small[text()='Show detail']";
 	public static final String NEW_OPTION_TEXTBOX = "//input[@name='newAnswer']";
-	public static final String NEW_OPTION_RADIOBUTON = "//input[@name='newAnswer']//ancestor::td/preceding-sibling::td/input[@type='radio' and @id='selectNewAnswer']";
+	public static final String NEW_OPTION_RADIOBUTON = "//input[@name='newAnswer']//ancestor::td/preceding-sibling::td/label";
 	public static final String GUEST_EMAIL_TEXTBOX = "//input[@type='email' and @id='guestEmail']";
 	public static final String GUEST_NAME_TEXTBOX = "//input[@type='text' and @id='guestName']";
 	public static final String REQUIRED_EMAIL_ERROR_MESSAGE = "//small[@data-bv-for='guestEmail' and text()='Please enter your email.']";
 	public static final String REQUIRED_NAME_ERROR_MESSAGE = "//small[@data-bv-for='guestName' and text()='Please enter a value']";
 	public static final String VOTE_BUTTON = "//input[@id='btnSubmitVote']";
 	public static final String OPTION_RADIOBUTTON_LIST = "//input[@class='css-checkbox myCheckBox answer']";
+	
+	public static final String POLL_REACH_VOTE_LIMIT_MESSAGE = "//div[@class='alert-message alert-message-failed' and contains(.,'This poll reached its vote limit.')]";
 	
 }

@@ -1,30 +1,3 @@
-2020-10-09 17:24:04,230 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Pre-condition: Launch app
-2020-10-09 17:24:10,358 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Input full valid data to create poll
-2020-10-09 17:24:11,401 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Click Poll Settings
-2020-10-09 17:24:12,631 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: The settings of logged-in user 'Set voting time', 'Allow voters to edit their answers', 'Participants' do not display
-2020-10-09 17:24:14,712 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:16,741 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:18,772 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:18,772 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: Optimize_Poll_Link is auto-checked and is disabled
-2020-10-09 17:24:18,806 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:18,832 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:18,832 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: Poll_Link is auto-generated
-2020-10-09 17:24:18,936 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:18,936 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Select 'Required email to voting'
-2020-10-09 17:24:18,979 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Select 'Required name to voting'
-2020-10-09 17:24:19,018 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Select 'Allow voters to add new answers'
-2020-10-09 17:24:19,060 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Select 'Hide voting result'
-2020-10-09 17:24:19,099 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - Step: Click Create Poll button and navigate to Voting page
-2020-10-09 17:24:24,368 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: The Poll Link after created equals the auto-generated link 
-2020-10-09 17:24:24,377 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User -  -------------------------- PASSED -------------------------- 
-2020-10-09 17:24:24,378 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: New Option textbox/RadioButton display at Voting page 
-2020-10-09 17:24:25,932 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------FAILED-------
-2020-10-09 17:24:26,061 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:26,061 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: Email/Name is required when voting 
-2020-10-09 17:24:26,276 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:26,382 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:26,716 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:26,814 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:26,815 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - VP: Preview result/'Show Detail' does not display at Voting page 
-2020-10-09 17:24:28,885 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
-2020-10-09 17:24:30,950 INFO  com.zingpoll.TS02_Settings_Poll_By_Anonymous_User - ----------PASSED-------
+2020-10-16 16:34:01,709 INFO  com.zingpoll.TS04_Sorting_In_Search_Polls_Result - Step: Input text search into Search textbox then click Search icon
+2020-10-16 16:34:04,149 INFO  com.zingpoll.TS04_Sorting_In_Search_Polls_Result - Step: The polls are sorted descending by the created date 
+2020-10-16 16:34:05,356 INFO  com.zingpoll.TS04_Sorting_In_Search_Polls_Result - ----------FAILED-------

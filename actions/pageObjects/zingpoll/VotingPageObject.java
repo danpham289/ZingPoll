@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import commons.AbstractPage;
 import io.qameta.allure.Step;
+import pageUIs.zingpoll.AbstractPageUI;
+import pageUIs.zingpoll.ResultPageUI;
 import pageUIs.zingpoll.VotingPageUI;
 
 public class VotingPageObject extends AbstractPage {
@@ -63,6 +65,7 @@ public class VotingPageObject extends AbstractPage {
 	public ManagePollPageObject clickToManagePollLink() {
 		waitElementClickable(driver, VotingPageUI.MANAGE_POLL_LINK);
 		clickToElement(driver, VotingPageUI.MANAGE_POLL_LINK);
+		waitForJStoLoad(driver);
 		return PageGeneratorManager.getManagePollPageObject(driver);
 	}
 
@@ -79,7 +82,8 @@ public class VotingPageObject extends AbstractPage {
 	public void clickToVoteButton() {
 		waitElementClickable(driver, VotingPageUI.VOTE_BUTTON);
 		clickToElement(driver, VotingPageUI.VOTE_BUTTON);
-		waitForJStoLoad(driver);
+		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
+		//waitForJStoLoad(driver);
 	}
 
 	public boolean isRequiredEmailErrorMessageDisplayed() {
@@ -114,5 +118,14 @@ public class VotingPageObject extends AbstractPage {
 	public void selectAnswerOptionRadiobutton(int index) {
 		WebElement element = finds(driver, VotingPageUI.OPTION_RADIOBUTTON_LIST).get(index);
 		((JavascriptExecutor) driver).executeScript("arguments[0].click()", element);
+	}
+
+	public boolean isPollReachVotingLimitDisplayed() {
+		waitElementVisible(driver, VotingPageUI.POLL_REACH_VOTE_LIMIT_MESSAGE);
+		return isElementDisplayed(driver, VotingPageUI.POLL_REACH_VOTE_LIMIT_MESSAGE);
+	}
+
+	public boolean isVoteButtonUndisplayed() {
+		return isElementUndisplayed(driver, VotingPageUI.VOTE_BUTTON);
 	}
 }

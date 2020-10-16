@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.GlobalConstants;
-import driverFactory.DriverFactory;
 import driverFactory.DriverManager;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -57,7 +56,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 	@Story("Story 01: Create Poll")
 	@Description("Anonymous user can create poll with attached images successfully")
 	@Severity(SeverityLevel.NORMAL)
-	@Test
+	@Test(priority=1)
 	public void TC01_Create_Poll_With_Attached_Image() {
 		log.info("Step 1: Input question content");
 		homePage.inputToQuestionContentTextbox(GlobalConstants.COUNTRY_QUESTION_CONTENT);
@@ -87,7 +86,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 		votingPage = homePage.clickToCreatePollButton();
 
 		log.info("VP: The poll is created successfully");
-		verifyFalse(votingPage.isCreatePollSuccessMessageDisplayed());
+		verifyTrue(votingPage.isCreatePollSuccessMessageDisplayed());
 
 		
 		log.info("VP: The poll is created with correct question content");
@@ -128,7 +127,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 
 	}
 	
-	@Test(dependsOnMethods = "TC01_Create_Poll_With_Attached_Image")
+	@Test(dependsOnMethods = "TC01_Create_Poll_With_Attached_Image",priority=2)
 	public void TC02_Anonymous_User_Edit_Poll(){
 		log.info("Step 1: Click Manage Poll button from Create Poll Successfully Email");
 		managePollPage = mailinatorPage.clickToManagePollButton();
@@ -187,7 +186,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 		verifyTrue(votingPage.isAnswerOptionImageDisplayed(GlobalConstants.OPTION5));		
 	}
 	
-	@Test(dependsOnMethods = "TC02_Anonymous_User_Edit_Poll")
+	@Test(dependsOnMethods = "TC02_Anonymous_User_Edit_Poll",priority=3)
 	public void TC03_Anonymous_User_Delete_Poll(){
 		log.info("Step 9: Click Manage Poll, it navigate to Manage Poll page");
 		managePollPage = votingPage.clickToManagePollLink();
@@ -196,7 +195,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 		managePollPage.cickToPollDeleteIcon();
 		
 		log.info("VP: Confirm manage poll password popup displays");
-		verifyFalse(managePollPage.isConfirmManagePollPasswordPopupDisplayed());
+		verifyTrue(managePollPage.isConfirmManagePollPasswordPopupDisplayed());
 				
 		log.info("Step 3: Input Password to manage poll and click OK button");
 		managePollPage.inputToManagePollPasswordTextbox(managePollPassword);
@@ -209,13 +208,16 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 		log.info("VP: Open the poll URL , it returns ... page (not implement, it is opening Error page) ");		
 	}
 	
-
+//	@Test(priority=4)
 	public void TC04_Create_Poll_With_Bunch_Of_Answer_Options(){
+		log.info("Pre-condition: Click ZingPoll icon");
+		homePage.clickToZingPollIcon();
+		
 		log.info("Step 1: Input question content");
 		homePage.inputToQuestionContentTextbox(GlobalConstants.NUMBER_QUESTION_CONTENT);
 
 		log.info("Step 2: Input 20 answer options");
-		int optionsNumber = 5;
+		int optionsNumber = 20;
 		for (int i = 1; i <= optionsNumber; i++) {
 			if (i < 3) {
 				homePage.inputToOption1Textbox(String.valueOf(randomNumber()));

@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class GlobalConstants {
 	public static final String ROOT_FOLDER = System.getProperty("user.dir");
-	public static final String URL = "https://test.zingpoll.com/";
+	public static final String URL = "https://zingpoll.com/";
 	public static final String NUMBER_QUESTION_CONTENT = "What is your favorite number?";
 	public static final String COUNTRY_QUESTION_CONTENT = "What is your favorite country?";
 	public static final String UPDATE_COUNTRY_QUESTION_CONTENT = "Which country do you want to travel?";

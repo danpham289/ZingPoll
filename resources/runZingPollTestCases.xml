@@ -10,8 +10,10 @@
 	<test name="RUN ON CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class
-				name="com.zingpoll.TS02_Settings_Poll_By_Anonymous_User" />
+<!-- 			<class name="com.zingpoll.TS01_Create_Update_Delete_Poll_By_Anonymous_User" /> -->
+<!-- 			<class name="com.zingpoll.TS03_Settings_Poll_By_Anonymous_User" /> -->
+			<class name="com.zingpoll.TS04_Sorting_In_Search_Polls_Result" />
+<!-- 			<class name="com.zingpoll.TS01_Sign_Up" /> -->
 		</classes>
 	</test>
 

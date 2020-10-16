@@ -22,5 +22,8 @@ public class PageGeneratorManager {
 	public static PollDeletePageObject getPollDeletePageObject(WebDriver driver ) {
 		return new PollDeletePageObject(driver);
 	}
+	public static ResultPageObject getResultPageObject(WebDriver driver ) {
+		return new ResultPageObject(driver);
+	}
 
 }

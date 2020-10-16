@@ -86,7 +86,7 @@ public class TS01_Sign_Up extends AbstractTest {
 				
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
 		closeBrowserAndDriver(driver);
 	}

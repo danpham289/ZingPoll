@@ -24,6 +24,7 @@ public class HomePageUI {
 	public static final String ALLOW_VOTER_ADD_ANWSER_CHECKBOX = "//input[@id='is_add_answer']";
 	public static final String HIDE_VOTING_RESULT_CHECKBOX = "//input[@id='is_hidden']";
 	public static final String SET_VOTING_LIMIT_CHECKBOX = "//input[@id='voteLimit']";
+	public static final String VOTING_LIMIT_NUMBER_TEXTBOX = "//input[@id='numberOfLimit']";
 	public static final String SET_PASSWORD_CHECKBOX = "//input[@id='cbpasswordVote']";
 
 	public static final String SIGN_IN_MENU = "//a[@id='Loginform']";
@@ -44,4 +45,8 @@ public class HomePageUI {
 	public static final String FULL_NAME_TEXT = "//div[@class='username' and contains(text(),'%s')]";
 
 	public static final String ACTIVATE_ACCOUNT_SUCCESS_MESSAGE = "//div[@class='alert-message-container']/div[contains(.,'Your account is activated successfully!')]";
+	public static final String SEARCH_TEXTBOX = "//input[@id='key']";
+	public static final String SEARCH_ICON = "//button[@class='btn btn-default btn-custom-01 border-0 bg-blue-01 h-30px p-0']/i";
+	public static final String SEARCH_RESULT_TEXT = "//h3[contains(text(),'Search Result')]";
+	public static final String CREATED_DATE_TEXT = "//span[contains(@id,'create-date')]";
 }

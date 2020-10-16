@@ -231,14 +231,44 @@ public class HomePageObject extends AbstractPage{
 
 	public void selectAllowVotersAddNewAnswersCheckbox() {
 		//waitElementClickable(driver,HomePageUI.ALLOW_VOTER_ADD_ANWSER_CHECKBOX);
-		clickToElementByJS(driver,HomePageUI.ALLOW_VOTER_ADD_ANWSER_CHECKBOX);
-		
+		clickToElementByJS(driver,HomePageUI.ALLOW_VOTER_ADD_ANWSER_CHECKBOX);		
 	}
 
 	public void selectHideVotingResultCheckbox() {
 		//waitElementClickable(driver,HomePageUI.HIDE_VOTING_RESULT_CHECKBOX);
 		clickToElementByJS(driver,HomePageUI.HIDE_VOTING_RESULT_CHECKBOX);
 		
+	}
+
+
+	public void selectSetVotingLimitCheckbox() {
+		clickToElementByJS(driver,HomePageUI.SET_VOTING_LIMIT_CHECKBOX);		
+	}
+
+	public boolean isLimitVoteNumberTextboxEnabled() {
+		return isElementEnabled(driver, HomePageUI.VOTING_LIMIT_NUMBER_TEXTBOX);
+	}
+
+	public void inputToLimitVoteNumberTextbox(String value) {
+		waitElementVisible(driver, HomePageUI.VOTING_LIMIT_NUMBER_TEXTBOX);
+		sendKeysToElement(driver, HomePageUI.VOTING_LIMIT_NUMBER_TEXTBOX, value);
+	}
+	
+
+	public void inputToPollSearchTextbox(String value) {
+		waitElementVisible(driver, HomePageUI.SEARCH_TEXTBOX);
+		sendKeysToElement(driver, HomePageUI.SEARCH_TEXTBOX, value);
+	}
+
+	public void clickToSearchIcon() {
+		waitElementClickable(driver, HomePageUI.SEARCH_ICON);
+		clickToElement(driver, HomePageUI.SEARCH_ICON);
+		waitElementsVisible(driver, HomePageUI.SEARCH_RESULT_TEXT);
+	}
+
+	public boolean isDateCreatedPollSortedByDescending() {
+		waitElementsVisible(driver, HomePageUI.CREATED_DATE_TEXT);
+		return isDateSortedByDescending(driver, HomePageUI.CREATED_DATE_TEXT);
 	}
 
 

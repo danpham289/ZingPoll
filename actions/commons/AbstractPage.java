@@ -1,5 +1,11 @@
 package commons;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -18,7 +24,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageUIs.zingpoll.AbstractPageUI;
-import pageUIs.zingpoll.HomePageUI;
 
 public abstract class AbstractPage {
 	public void openPageUrl(WebDriver driver, String pageUrl) {
@@ -539,6 +544,49 @@ public abstract class AbstractPage {
 		}else {
 			return false;
 		}
+	}
+	
+	public boolean isDateSortedByDescending(WebDriver driver, String xpathValue) {
+		
+		ArrayList<Date> arraylist = new ArrayList<Date>();
+		
+		elements = finds(driver, xpathValue);
+		
+		for (WebElement element : elements) {
+			arraylist.add(convertStringToDate(element.getText()));
+		}		
+		System.out.println("--- Date not sort----");		
+		for (Date date : arraylist) {
+
+			System.out.println(date);
+		}		
+		ArrayList<Date> sortedlist = new ArrayList<Date>();		
+		for (Date child : arraylist) {
+			sortedlist.add(child);
+		}			
+		Collections.sort(sortedlist);
+		Collections.reverse(sortedlist);
+				
+		System.out.println("--- Date sorted----");		
+		for (Date date : sortedlist) {
+
+			System.out.println(date);
+		}		
+		return arraylist.equals(sortedlist);
+	}
+	
+	public Date convertStringToDate(String dateInString) {
+		System.out.println(dateInString);
+		SimpleDateFormat formatter=new SimpleDateFormat("HH:mm MM/dd/yyyy");
+		Date date=null;
+		try {
+			date=formatter.parse(dateInString);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(date);
+		return date;
 	}
 	
 	private WebDriverWait explicitWait;

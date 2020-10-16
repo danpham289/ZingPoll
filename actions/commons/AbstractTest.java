@@ -1,6 +1,5 @@
 package commons;
 
-import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -66,33 +65,76 @@ public abstract class AbstractTest {
 
 	protected void closeBrowserAndDriver(WebDriver driver) {
 
+//		try {
+//			if (driver != null) {
+//				driver.quit();
+//			}
+//
+//			String osName = System.getProperty("os.name").toLowerCase();
+//			log.info("OS is " + osName);
+//			log.info("Browser Driver is " + driver.toString().toLowerCase());
+//			String cmd = null;
+//			if (driver.toString().toLowerCase().contains("chromedriver")) {
+//				if (osName.contains("mac")) {
+//					cmd = "pkill chromedriver";
+//				} else if (osName.contains("window")) {
+//					cmd = "taskkill /F/FI \"IMAGENAME eq chromedriver*\"";
+//				}
+//				
+//			} else if (driver.toString().toLowerCase().contains("geckodriver")) {
+//				if (osName.contains("mac")) {
+//					cmd = "pkill geckodriver";
+//				} else if (osName.contains("window")) {
+//					cmd = "taskkill /F/FI \"IMAGENAME eq geckodriver*\"";
+//				}
+//
+//			}
+//			
+//			Process process = Runtime.getRuntime().exec(cmd);
+//			process.waitFor();
+//
+//			log.info("-------------QUIT BROWSER SUCCESS------------------");
+//		} catch (Exception e) {
+//			log.info(e.getMessage());
+//		}
+		
 		try {
+			// get ra tên của OS và convert qua chữ thường
+			String osName = System.getProperty("os.name").toLowerCase();
+			log.info("OS name = " + osName);
+
+			// Khai báo 1 biến command line để thực thi
+			String cmd = null;
 			if (driver != null) {
 				driver.quit();
 			}
 
-			String osName = System.getProperty("os.name").toLowerCase();
-			log.info("Browser Driver is " + driver.toString().toLowerCase());
-			String cmd = null;
-			if (driver.toString().toLowerCase().contains("chromedriver")) {
-
-				if (osName.contains("mac")) {
+			if (driver.toString().toLowerCase().contains("chrome")) {
+				if (osName.toLowerCase().contains("mac")) {
 					cmd = "pkill chromedriver";
-				} else if (osName.contains("window")) {
-					cmd = "taskkill /F/FI \"IMAGENAME eq chromedriver*\"";
+				} else if (osName.toLowerCase().contains("windows")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq chromedriver*\"";
+				}
+			} else if (driver.toString().toLowerCase().contains("internetexplorer")) {
+				if (osName.toLowerCase().contains("window")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq IEDriverServer*\"";
 				}
 			} else if (driver.toString().toLowerCase().contains("firefox")) {
-
-				if (osName.contains("mac")) {
+				if (osName.toLowerCase().contains("mac")) {
 					cmd = "pkill geckodriver";
-				} else if (osName.contains("window")) {
-					cmd = "taskkill /F/FI \"IMAGENAME eq geckodriver*\"";
+				} else if (osName.toLowerCase().contains("windows")) {
+					cmd = "taskkill /F /FI \"IMAGENAME eq geckodriver*\"";
 				}
 			}
-			Runtime.getRuntime().exec(cmd);
-		} catch (IOException e) {
+
+			Process process = Runtime.getRuntime().exec(cmd);
+			process.waitFor();
+
+			log.info("---------- QUIT BROWSER SUCCESS ----------");
+		} catch (Exception e) {
 			log.info(e.getMessage());
 		}
+		
 	}
 
 	public int randomNumber() {
