@@ -128,4 +128,24 @@ public class VotingPageObject extends AbstractPage {
 	public boolean isVoteButtonUndisplayed() {
 		return isElementUndisplayed(driver, VotingPageUI.VOTE_BUTTON);
 	}
+
+	
+
+	public void inputToPollPasswordTextbox(String pollPassword) {
+		waitElementVisible(driver, VotingPageUI.POLL_PASSWORD_TEXTBOX);
+		sendKeysToElement(driver, VotingPageUI.POLL_PASSWORD_TEXTBOX, pollPassword);
+	}
+
+	public void sendEnterKeyToPollPasswordTextbox() {
+		
+	}
+
+	public boolean isRequirePasswordAlertMessageDisplayed() {
+		waitElementVisible(driver, VotingPageUI.REQUIRE_PASSWORD_MESSAGE);
+		return isElementDisplayed(driver, VotingPageUI.REQUIRE_PASSWORD_MESSAGE);
+	}
+
+	public boolean isRequirePasswordAlertMessageUndisplayed() {
+		return isElementUndisplayed(driver, VotingPageUI.REQUIRE_PASSWORD_MESSAGE);
+	}
 }

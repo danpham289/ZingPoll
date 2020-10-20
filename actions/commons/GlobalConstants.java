@@ -21,7 +21,7 @@ public class GlobalConstants {
 	public static final String UPDATE_OPTION4 = "FRANCE";
 	public static final String UPDATE_OPTION4_IMAGE_FILE = "FRANCEimage.gif";
 	public static final String OPTION5 = "SINGAPORE";
-	public static final String EMAIL = "testing"+randomNumber()+"@mailinator.com";
+	public static final String REGISTER_EMAIL = "testing"+randomNumber()+"@mailinator.com";
 	public static final String ANONYMOUS_EMAIL = "anonymous@mailinator.com";
 	public static final String EMAIL_URL = "https://www.mailinator.com/";	
 	public static final String FULLNAME = "Testing";	

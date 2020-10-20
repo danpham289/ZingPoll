@@ -228,7 +228,7 @@ public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTe
 		}
 
 		log.info("Step 3: Input email");
-		homePage.inputToEmailTextbox(GlobalConstants.EMAIL);
+		homePage.inputToEmailTextbox(GlobalConstants.ANONYMOUS_EMAIL);
 
 		log.info("Step 4: Click Create Poll");
 		votingPage = homePage.clickToCreatePollButton();

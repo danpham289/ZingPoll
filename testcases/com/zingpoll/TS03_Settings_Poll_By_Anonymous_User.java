@@ -37,9 +37,8 @@ public class TS03_Settings_Poll_By_Anonymous_User extends AbstractTest {
 	@Parameters({ "browser" })
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName,GlobalConstants.URL);
 		log.info("Pre-condition: Launch app");
-		driver.get(GlobalConstants.URL);
 		homePage = PageGeneratorManager.getHomePageObject(driver);
 		homePage.waitForJStoLoad(driver);
 	}
@@ -76,14 +75,13 @@ public class TS03_Settings_Poll_By_Anonymous_User extends AbstractTest {
 
 		log.info("Step: Open Voting Poll page in the other session and Select one answer option then Click Vote button - Repeat this step 'votingLimitNumber' times");
 		for (int i = 0; i < votingLimitNumber; i++) {	
-			driver = getBrowserDriver(browserName);
-			driver.get(GlobalConstants.URL + pollURL);
+			driver = getBrowserDriver(browserName,GlobalConstants.URL + pollURL);
 			votingPage = PageGeneratorManager.getVotingPageObject(driver);
-			homePage.waitForJStoLoad(driver);
+			votingPage.waitForJStoLoad(driver);
 			votingPage.selectAnswerOptionRadiobutton(0);
 			votingPage.clickToVoteButton();
 			resultPage = PageGeneratorManager.getResultPageObject(driver);
-			log.info("VP: msg 'Your answer(s) have been submitted.' displays after reaching vote limit in Result page");
+			log.info("VP: msg 'Your answer(s) have been submitted.' displaysin Result page");
 			verifyTrue(resultPage.isVotingPollSuccessMessageDisplayed());
 			
 			if(i==(votingLimitNumber-1)) {
@@ -94,8 +92,7 @@ public class TS03_Settings_Poll_By_Anonymous_User extends AbstractTest {
 		}
 		
 		log.info("Step: Open Voting Poll page in the other session for the 'votingLimitNumber' + 1 times");
-		driver = getBrowserDriver(browserName);
-		driver.get(GlobalConstants.URL + pollURL);
+		driver = getBrowserDriver(browserName,GlobalConstants.URL + pollURL);
 		votingPage = PageGeneratorManager.getVotingPageObject(driver);
 		
 		log.info("VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Voting page ");
@@ -104,8 +101,6 @@ public class TS03_Settings_Poll_By_Anonymous_User extends AbstractTest {
 		log.info("VP: Vote button does not displays after reaching vote limit in Voting page ");
 		verifyTrue(votingPage.isVoteButtonUndisplayed());
 	}
-
-
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {

@@ -271,6 +271,20 @@ public class HomePageObject extends AbstractPage{
 		return isDateSortedByDescending(driver, HomePageUI.CREATED_DATE_TEXT);
 	}
 
+	public boolean isPollPasswordTextboxEnabled() {
+		return isElementEnabled(driver, HomePageUI.SET_PASSWORD_TEXTBOX);
+	}
+
+	public void selectSetPasswordCheckbox() {
+		//waitElementVisible(driver, HomePageUI.SET_PASSWORD_CHECKBOX);
+		clickToElementByJS(driver, HomePageUI.SET_PASSWORD_CHECKBOX);
+	}
+
+	public void inputToPollPasswordTextbox(String pollPassword) {
+		waitElementVisible(driver, HomePageUI.SET_PASSWORD_TEXTBOX);
+		sendKeysToElement(driver, HomePageUI.SET_PASSWORD_TEXTBOX, pollPassword);
+	}
+
 
 
 	

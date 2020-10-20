@@ -43,7 +43,7 @@ public class TS01_Sign_Up extends AbstractTest {
 		
 		//Input valid data into the fields
 		homePage.inputToFullNameTextbox(GlobalConstants.FULLNAME);
-		homePage.inputToRegisterEmailTextbox(GlobalConstants.EMAIL);
+		homePage.inputToRegisterEmailTextbox(GlobalConstants.REGISTER_EMAIL);
 		homePage.inputToPasswordTextbox(GlobalConstants.PASSWORD);
 		homePage.inputToReenterPasswordTextbox(GlobalConstants.PASSWORD);
 		
@@ -65,7 +65,7 @@ public class TS01_Sign_Up extends AbstractTest {
 		
 		
 		//Input email into mail textbox
-		mailinatorPage.inputToMailTextbox(GlobalConstants.EMAIL);
+		mailinatorPage.inputToMailTextbox(GlobalConstants.REGISTER_EMAIL);
 		
 		// Click Go button
 		mailinatorPage.clickToGoButton();

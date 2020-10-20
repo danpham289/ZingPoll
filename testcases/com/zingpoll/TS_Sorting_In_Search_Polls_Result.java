@@ -1,9 +1,6 @@
 package com.zingpoll;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -15,7 +12,7 @@ import pageObjects.zingpoll.HomePageObject;
 import pageObjects.zingpoll.MailinatorPageObject;
 import pageObjects.zingpoll.PageGeneratorManager;
 
-public class TS04_Sorting_In_Search_Polls_Result extends AbstractTest {
+public class TS_Sorting_In_Search_Polls_Result extends AbstractTest {
 	
 	private WebDriver driver;
 	HomePageObject homePage;
@@ -31,7 +28,7 @@ public class TS04_Sorting_In_Search_Polls_Result extends AbstractTest {
 	}
 
 	@Test
-	public void TC01_Sorting_In_Search_Poll_Result() throws InterruptedException{
+	public void TC14_Sorting_In_Search_Poll_Result() throws InterruptedException{
 		log.info("Step: Input text search into Search textbox then click Search icon");
 		homePage.inputToPollSearchTextbox("test");	
 		homePage.clickToSearchIcon();	
@@ -42,7 +39,7 @@ public class TS04_Sorting_In_Search_Polls_Result extends AbstractTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-//		closeBrowserAndDriver(driver);
+		closeBrowserAndDriver(driver);
 	}
 
 }

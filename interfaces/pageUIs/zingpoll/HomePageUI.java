@@ -26,6 +26,7 @@ public class HomePageUI {
 	public static final String SET_VOTING_LIMIT_CHECKBOX = "//input[@id='voteLimit']";
 	public static final String VOTING_LIMIT_NUMBER_TEXTBOX = "//input[@id='numberOfLimit']";
 	public static final String SET_PASSWORD_CHECKBOX = "//input[@id='cbpasswordVote']";
+	public static final String SET_PASSWORD_TEXTBOX = "//input[@id='passwordVote']";
 
 	public static final String SIGN_IN_MENU = "//a[@id='Loginform']";
 	public static final String ZINGPOLL_ICON = "//img[@class='navbar-brand__img']";

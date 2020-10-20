@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Zingpoll" parallel="false">
-
 	<listeners>
 		<listener class-name="commons.MethodListener" />
 <!-- 		<listener class-name="reportConfig.AllureTestListener" />  -->
@@ -12,7 +11,7 @@
 		<classes>
 <!-- 			<class name="com.zingpoll.TS01_Create_Update_Delete_Poll_By_Anonymous_User" /> -->
 <!-- 			<class name="com.zingpoll.TS03_Settings_Poll_By_Anonymous_User" /> -->
-			<class name="com.zingpoll.TS04_Sorting_In_Search_Polls_Result" />
+			<class name="com.zingpoll.TS04_Settings_Poll_By_Anonymous_User" />
 <!-- 			<class name="com.zingpoll.TS01_Sign_Up" /> -->
 		</classes>
 	</test>

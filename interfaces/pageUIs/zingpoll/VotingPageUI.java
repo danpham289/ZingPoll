@@ -22,5 +22,7 @@ public class VotingPageUI {
 	public static final String OPTION_RADIOBUTTON_LIST = "//input[@class='css-checkbox myCheckBox answer']";
 	
 	public static final String POLL_REACH_VOTE_LIMIT_MESSAGE = "//div[@class='alert-message alert-message-failed' and contains(.,'This poll reached its vote limit.')]";
+	public static final String REQUIRE_PASSWORD_MESSAGE = "//div[@id='alert-message-password-require']";
+	public static final String POLL_PASSWORD_TEXTBOX = "//input[@id='passwordVote']";
 	
 }
