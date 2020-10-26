@@ -15,7 +15,7 @@ import pageObjects.zingpoll.HomePageObject;
 import pageObjects.zingpoll.MailinatorPageObject;
 import pageObjects.zingpoll.PageGeneratorManager;
 
-public class TS01_Sign_Up extends AbstractTest {
+public class Users_TS01_Sign_Up extends AbstractTest {
 	
 	private WebDriver driver;
 	HomePageObject homePage;

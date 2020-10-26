@@ -12,7 +12,7 @@ import pageObjects.zingpoll.HomePageObject;
 import pageObjects.zingpoll.MailinatorPageObject;
 import pageObjects.zingpoll.PageGeneratorManager;
 
-public class TS_Sorting_In_Search_Polls_Result extends AbstractTest {
+public class Search_TS01_Sorting_In_Search_Polls_Result extends AbstractTest {
 	
 	private WebDriver driver;
 	HomePageObject homePage;

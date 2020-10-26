@@ -3654,3 +3654,398 @@
 2020-10-19 10:26:12,066 INFO  com.zingpoll.TS04_Settings_Poll_By_Anonymous_User - ----------PASSED-------
 2020-10-19 10:26:12,149 INFO  com.zingpoll.TS04_Settings_Poll_By_Anonymous_User - OS name = windows 10
 2020-10-19 10:26:13,179 INFO  com.zingpoll.TS04_Settings_Poll_By_Anonymous_User - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:01:15,238 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Pre-condition: Launch app
+2020-10-26 20:14:08,875 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:14:16,298 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:14:19,046 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:14:20,975 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The settings of logged-in user 'Set voting time', 'Allow voters to edit their answers', 'Participants' do not display
+2020-10-26 20:14:23,020 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:25,055 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:27,078 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:27,078 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Optimize_Poll_Link is auto-checked and is disabled
+2020-10-26 20:14:27,121 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:27,151 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:27,152 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Poll_Link is auto-generated
+2020-10-26 20:14:27,239 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:27,240 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required email to voting'
+2020-10-26 20:14:27,291 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required name to voting'
+2020-10-26 20:14:27,363 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Allow voters to add new answers'
+2020-10-26 20:14:27,406 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Hide voting result'
+2020-10-26 20:14:27,456 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:14:33,366 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The Poll Link after created equals the auto-generated link 
+2020-10-26 20:14:33,448 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings -  -------------------------- PASSED -------------------------- 
+2020-10-26 20:14:33,448 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: New Option textbox/RadioButton display at Voting page 
+2020-10-26 20:14:34,002 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:34,377 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:34,377 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Email/Name is required when voting 
+2020-10-26 20:14:34,476 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:14:34,570 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:15:05,422 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - OS name = windows 10
+2020-10-26 20:15:07,070 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:15:22,893 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:15:22,941 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:15:25,860 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:15:27,223 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Optimize Poll_Link
+2020-10-26 20:15:27,687 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Select 'Set voting limit' and input limit vote number
+2020-10-26 20:15:27,745 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:15:27,832 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:15:28,166 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:15:33,046 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: The Poll Link after created equals the optimized link 
+2020-10-26 20:15:33,057 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings -  -------------------------- PASSED -------------------------- 
+2020-10-26 20:15:34,280 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session and Select one answer option then Click Vote button - Repeat this step 'votingLimitNumber' times
+2020-10-26 20:15:49,106 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:15:51,227 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:07,966 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:16:10,361 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:10,361 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Result page
+2020-10-26 20:16:10,646 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:11,955 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session for the 'votingLimitNumber' + 1 times
+2020-10-26 20:16:22,275 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Voting page 
+2020-10-26 20:16:25,420 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:25,421 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: Vote button does not displays after reaching vote limit in Voting page 
+2020-10-26 20:16:25,544 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:25,563 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - OS name = windows 10
+2020-10-26 20:16:27,364 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:16:27,366 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:16:43,033 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Click ZingPoll icon
+2020-10-26 20:16:48,714 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 1: Input question content
+2020-10-26 20:16:49,585 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 2: Input 20 answer options
+2020-10-26 20:16:57,444 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 3: Input email
+2020-10-26 20:16:58,003 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:16:59,342 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select 'Set Password' and input data to password textbox
+2020-10-26 20:16:59,395 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:59,472 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:16:59,816 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:17:03,683 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - VP: Require Password Alert message displays
+2020-10-26 20:17:05,230 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:17:05,230 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Input Poll Password 
+2020-10-26 20:17:05,881 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select an answer option and click Vote button
+2020-10-26 20:17:12,393 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displays
+2020-10-26 20:17:14,188 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:17:14,205 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - OS name = windows 10
+2020-10-26 20:17:15,826 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:17:29,763 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: Input text search into Search textbox then click Search icon
+2020-10-26 20:17:34,140 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: The polls are sorted descending by the created date 
+2020-10-26 20:17:36,955 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ----------PASSED-------
+2020-10-26 20:17:36,965 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - OS name = windows 10
+2020-10-26 20:17:38,491 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:18:00,348 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:18:02,164 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:18:06,675 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:18:12,144 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:18:12,891 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:18:12,911 INFO  com.zingpoll.Users_TS01_Sign_Up - OS name = windows 10
+2020-10-26 20:18:14,529 INFO  com.zingpoll.Users_TS01_Sign_Up - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:18:18,803 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Pre-condition: Launch app
+2020-10-26 20:18:26,669 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 1: Input question content
+2020-10-26 20:18:27,421 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 2: Input 2 first answer options with images uploaded from your picture 
+2020-10-26 20:18:30,765 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input more 2 new options with images uploaded from internet picture 
+2020-10-26 20:18:43,799 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 4: Input email
+2020-10-26 20:18:44,384 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 5: Click Create Poll
+2020-10-26 20:18:50,561 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created successfully
+2020-10-26 20:18:52,013 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:52,013 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created with correct question content
+2020-10-26 20:18:52,099 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:52,099 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created with 4 correct options and attached images
+2020-10-26 20:18:52,237 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:52,696 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:52,808 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:52,908 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,010 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,114 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,209 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,302 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,302 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Get URL of the created poll
+2020-10-26 20:18:53,308 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: QR Code of the poll display
+2020-10-26 20:18:53,383 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:53,384 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Create Poll Successfully mail is sent to the creator's email
+2020-10-26 20:18:57,615 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:57,615 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Content of Create Poll Successfully mail display correctly 
+2020-10-26 20:18:58,505 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:58,505 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Get Manage Poll Password from Create Poll Successfully Email
+2020-10-26 20:18:58,544 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Link of Manage Poll button in Create Poll Successfully Email is link of the correct manage poll page 
+2020-10-26 20:18:58,624 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:18:58,665 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 1: Click Manage Poll button from Create Poll Successfully Email
+2020-10-26 20:19:02,706 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 2: Click Update icon of the poll
+2020-10-26 20:19:03,424 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Confirm manage poll password popup displays
+2020-10-26 20:19:04,121 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:04,121 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input Password to manage poll and click OK button
+2020-10-26 20:19:08,246 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 4: Update question content
+2020-10-26 20:19:09,270 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 5: Delete the first option
+2020-10-26 20:19:09,483 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Update first answer options with images uploaded from internet picture
+2020-10-26 20:19:15,989 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 7: Update more 2 new options with images uploaded from your picture 
+2020-10-26 20:19:20,370 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 8: Input more 1 new option with images uploaded from internet picture
+2020-10-26 20:19:26,040 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Update Poll
+2020-10-26 20:19:32,587 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: URL of the poll is not changed
+2020-10-26 20:19:33,213 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:33,213 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Update Poll Success message displays and Poll is updated with correct data
+2020-10-26 20:19:33,359 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:33,752 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:33,845 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:33,930 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,027 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,132 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,216 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,296 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,373 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,452 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:34,470 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Manage Poll, it navigate to Manage Poll page
+2020-10-26 20:19:38,937 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Delete icon of poll
+2020-10-26 20:19:39,574 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Confirm manage poll password popup displays
+2020-10-26 20:19:40,037 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:40,037 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input Password to manage poll and click OK button
+2020-10-26 20:19:43,234 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Delete Poll Successfullu message displays
+2020-10-26 20:19:44,175 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:19:44,175 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Open the poll URL , it returns ... page (not implement, it is opening Error page) 
+2020-10-26 20:19:44,185 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - OS name = windows 10
+2020-10-26 20:19:45,765 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:19:48,621 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - OS name = windows 10
+2020-10-26 20:19:48,622 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - 
+2020-10-26 20:19:50,180 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - OS name = windows 10
+2020-10-26 20:19:50,180 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - 
+2020-10-26 20:19:50,182 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:19:51,674 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - OS name = windows 10
+2020-10-26 20:19:51,674 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - 
+2020-10-26 20:19:53,178 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - OS name = windows 10
+2020-10-26 20:19:53,178 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - 
+2020-10-26 20:19:54,627 INFO  com.zingpoll.Users_TS01_Sign_Up - OS name = windows 10
+2020-10-26 20:19:54,628 INFO  com.zingpoll.Users_TS01_Sign_Up - 
+2020-10-26 20:19:56,091 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - OS name = windows 10
+2020-10-26 20:19:56,091 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - 
+2020-10-26 20:23:26,834 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:23:34,505 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:23:36,699 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:23:37,626 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The settings of logged-in user 'Set voting time', 'Allow voters to edit their answers', 'Participants' do not display
+2020-10-26 20:23:39,703 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:41,739 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:43,782 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:43,783 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Optimize_Poll_Link is auto-checked and is disabled
+2020-10-26 20:23:43,825 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:43,855 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:43,856 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Poll_Link is auto-generated
+2020-10-26 20:23:43,946 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:43,947 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required email to voting'
+2020-10-26 20:23:43,997 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required name to voting'
+2020-10-26 20:23:44,067 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Allow voters to add new answers'
+2020-10-26 20:23:44,106 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Hide voting result'
+2020-10-26 20:23:44,156 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:23:48,322 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The Poll Link after created equals the auto-generated link 
+2020-10-26 20:23:48,332 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings -  -------------------------- PASSED -------------------------- 
+2020-10-26 20:23:48,332 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: New Option textbox/RadioButton display at Voting page 
+2020-10-26 20:23:49,263 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:50,105 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:50,105 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Email/Name is required when voting 
+2020-10-26 20:23:50,541 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:23:50,650 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:24:21,463 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - OS name = windows 10
+2020-10-26 20:24:23,003 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:24:31,875 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:24:36,200 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:24:38,507 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:24:39,340 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Optimize Poll_Link
+2020-10-26 20:24:39,737 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Select 'Set voting limit' and input limit vote number
+2020-10-26 20:24:39,793 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:24:39,877 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:24:40,188 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:24:46,486 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: The Poll Link after created equals the optimized link 
+2020-10-26 20:24:46,547 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings -  -------------------------- PASSED -------------------------- 
+2020-10-26 20:24:47,921 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session and Select one answer option then Click Vote button - Repeat this step 'votingLimitNumber' times
+2020-10-26 20:25:02,914 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:25:04,762 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:25:25,617 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:25:26,790 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:25:26,791 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Result page
+2020-10-26 20:25:26,933 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:25:28,155 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session for the 'votingLimitNumber' + 1 times
+2020-10-26 20:25:38,624 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Voting page 
+2020-10-26 20:25:40,633 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:25:40,633 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: Vote button does not displays after reaching vote limit in Voting page 
+2020-10-26 20:25:40,706 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:25:40,717 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - OS name = windows 10
+2020-10-26 20:25:42,214 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:25:42,216 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:25:54,855 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Click ZingPoll icon
+2020-10-26 20:26:00,139 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 1: Input question content
+2020-10-26 20:26:00,897 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 2: Input 20 answer options
+2020-10-26 20:26:09,493 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 3: Input email
+2020-10-26 20:26:10,184 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:26:11,534 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select 'Set Password' and input data to password textbox
+2020-10-26 20:26:11,569 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:26:11,642 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:26:11,972 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:26:25,748 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - VP: Require Password Alert message displays
+2020-10-26 20:26:26,466 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:26:26,466 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Input Poll Password 
+2020-10-26 20:26:27,082 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select an answer option and click Vote button
+2020-10-26 20:26:33,336 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displays
+2020-10-26 20:26:35,104 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:26:35,116 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - OS name = windows 10
+2020-10-26 20:26:36,641 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:26:49,913 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: Input text search into Search textbox then click Search icon
+2020-10-26 20:26:54,303 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: The polls are sorted descending by the created date 
+2020-10-26 20:26:55,999 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ----------PASSED-------
+2020-10-26 20:26:56,010 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - OS name = windows 10
+2020-10-26 20:26:57,672 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:27:19,988 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:27:21,163 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:27:25,551 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:27:30,407 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:27:31,043 INFO  com.zingpoll.Users_TS01_Sign_Up - ----------PASSED-------
+2020-10-26 20:27:31,060 INFO  com.zingpoll.Users_TS01_Sign_Up - OS name = windows 10
+2020-10-26 20:27:32,629 INFO  com.zingpoll.Users_TS01_Sign_Up - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:27:37,105 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Pre-condition: Launch app
+2020-10-26 20:27:42,515 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 1: Input question content
+2020-10-26 20:27:43,185 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 2: Input 2 first answer options with images uploaded from your picture 
+2020-10-26 20:27:46,637 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input more 2 new options with images uploaded from internet picture 
+2020-10-26 20:27:59,640 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 4: Input email
+2020-10-26 20:28:00,399 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 5: Click Create Poll
+2020-10-26 20:28:05,769 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created successfully
+2020-10-26 20:28:07,763 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:07,763 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created with correct question content
+2020-10-26 20:28:07,857 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:07,857 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: The poll is created with 4 correct options and attached images
+2020-10-26 20:28:07,946 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:10,949 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,070 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,179 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,310 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,394 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,512 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,620 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,620 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Get URL of the created poll
+2020-10-26 20:28:11,629 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: QR Code of the poll display
+2020-10-26 20:28:11,707 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:11,707 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Create Poll Successfully mail is sent to the creator's email
+2020-10-26 20:28:16,050 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:16,050 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Content of Create Poll Successfully mail display correctly 
+2020-10-26 20:28:16,856 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:16,856 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Get Manage Poll Password from Create Poll Successfully Email
+2020-10-26 20:28:16,907 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Link of Manage Poll button in Create Poll Successfully Email is link of the correct manage poll page 
+2020-10-26 20:28:16,972 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:16,992 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 1: Click Manage Poll button from Create Poll Successfully Email
+2020-10-26 20:28:20,548 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 2: Click Update icon of the poll
+2020-10-26 20:28:20,734 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Confirm manage poll password popup displays
+2020-10-26 20:28:21,399 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:21,399 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input Password to manage poll and click OK button
+2020-10-26 20:28:22,878 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 4: Update question content
+2020-10-26 20:28:25,843 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 5: Delete the first option
+2020-10-26 20:28:26,042 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 6: Update first answer options with images uploaded from internet picture
+2020-10-26 20:28:31,856 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 7: Update more 2 new options with images uploaded from your picture 
+2020-10-26 20:28:35,485 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 8: Input more 1 new option with images uploaded from internet picture
+2020-10-26 20:28:41,269 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Update Poll
+2020-10-26 20:28:47,282 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: URL of the poll is not changed
+2020-10-26 20:28:47,950 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:47,951 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Update Poll Success message displays and Poll is updated with correct data
+2020-10-26 20:28:48,046 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:48,135 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:48,222 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,079 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,154 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,239 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,328 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,421 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,514 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,586 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:49,603 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Manage Poll, it navigate to Manage Poll page
+2020-10-26 20:28:53,854 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 9: Click Delete icon of poll
+2020-10-26 20:28:54,365 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Confirm manage poll password popup displays
+2020-10-26 20:28:54,645 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:54,645 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input Password to manage poll and click OK button
+2020-10-26 20:28:57,943 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Delete Poll Successfullu message displays
+2020-10-26 20:28:58,711 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ----------PASSED-------
+2020-10-26 20:28:58,711 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - VP: Open the poll URL , it returns ... page (not implement, it is opening Error page) 
+2020-10-26 20:28:58,721 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - OS name = windows 10
+2020-10-26 20:29:00,249 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:30:30,159 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - OS name = windows 10
+2020-10-26 20:30:30,162 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - 
+2020-10-26 20:30:31,627 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - OS name = windows 10
+2020-10-26 20:30:31,627 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - 
+2020-10-26 20:30:31,629 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:30:33,086 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - OS name = windows 10
+2020-10-26 20:30:33,087 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - 
+2020-10-26 20:30:34,538 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - OS name = windows 10
+2020-10-26 20:30:34,539 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - 
+2020-10-26 20:30:36,020 INFO  com.zingpoll.Users_TS01_Sign_Up - OS name = windows 10
+2020-10-26 20:30:36,021 INFO  com.zingpoll.Users_TS01_Sign_Up - 
+2020-10-26 20:30:37,484 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - OS name = windows 10
+2020-10-26 20:30:37,485 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - 
+2020-10-26 20:36:57,868 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:37:06,598 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:37:08,584 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:37:09,715 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The settings of logged-in user 'Set voting time', 'Allow voters to edit their answers', 'Participants' do not display
+2020-10-26 20:37:11,768 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:13,812 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:15,860 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:15,860 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Optimize_Poll_Link is auto-checked and is disabled
+2020-10-26 20:37:15,890 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:15,918 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:15,919 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: Poll_Link is auto-generated
+2020-10-26 20:37:16,000 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:16,000 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required email to voting'
+2020-10-26 20:37:16,039 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Required name to voting'
+2020-10-26 20:37:16,083 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Allow voters to add new answers'
+2020-10-26 20:37:16,122 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Select 'Hide voting result'
+2020-10-26 20:37:16,168 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:37:19,179 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The Poll Link after created equals the auto-generated link 
+2020-10-26 20:37:19,191 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings -  -------------------------- FAILED -------------------------- 
+2020-10-26 20:37:19,194 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: New Option textbox/RadioButton display at Voting page 
+2020-10-26 20:37:19,254 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ----------FAILED-------
+2020-10-26 20:37:20,447 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - OS name = windows 10
+2020-10-26 20:37:24,013 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:37:42,436 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:37:42,919 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:37:45,146 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:37:46,076 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Optimize Poll_Link
+2020-10-26 20:37:46,354 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Select 'Set voting limit' and input limit vote number
+2020-10-26 20:37:46,405 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:46,495 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:37:46,696 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:37:49,560 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: The Poll Link after created equals the optimized link 
+2020-10-26 20:37:49,570 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings -  -------------------------- FAILED -------------------------- 
+2020-10-26 20:37:52,448 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session and Select one answer option then Click Vote button - Repeat this step 'votingLimitNumber' times
+2020-10-26 20:38:12,965 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:38:14,910 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:38:37,311 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg 'Your answer(s) have been submitted.' displaysin Result page
+2020-10-26 20:38:39,365 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:38:39,365 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Result page
+2020-10-26 20:38:39,476 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:38:42,283 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - Step: Open Voting Poll page in the other session for the 'votingLimitNumber' + 1 times
+2020-10-26 20:39:02,100 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: msg ' This poll reached its vote limit.' displays after reaching vote limit in Voting page 
+2020-10-26 20:39:02,667 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:39:02,668 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - VP: Vote button does not displays after reaching vote limit in Voting page 
+2020-10-26 20:39:02,763 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ----------PASSED-------
+2020-10-26 20:39:03,034 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - OS name = windows 10
+2020-10-26 20:39:06,145 INFO  com.zingpoll.Anonymous_User_TS03_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:39:06,147 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:39:25,628 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Pre-condition: Click ZingPoll icon
+2020-10-26 20:39:29,865 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 1: Input question content
+2020-10-26 20:39:30,367 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 2: Input 20 answer options
+2020-10-26 20:39:37,867 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step 3: Input email
+2020-10-26 20:39:38,307 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:39:39,217 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select 'Set Password' and input data to password textbox
+2020-10-26 20:39:39,236 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:39:39,283 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:39:39,458 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Click Create Poll button and navigate to Voting page
+2020-10-26 20:39:42,990 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - VP: Require Password Alert message displays
+2020-10-26 20:39:45,421 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ----------PASSED-------
+2020-10-26 20:39:45,422 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Input Poll Password 
+2020-10-26 20:39:45,765 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - Step: Select an answer option and click Vote button
+2020-10-26 20:40:20,178 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - OS name = windows 10
+2020-10-26 20:40:23,572 INFO  com.zingpoll.Anonymous_User_TS04_Poll_Settings - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:40:43,187 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: Input text search into Search textbox then click Search icon
+2020-10-26 20:40:47,987 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - Step: The polls are sorted descending by the created date 
+2020-10-26 20:40:49,979 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ----------PASSED-------
+2020-10-26 20:40:49,991 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - OS name = windows 10
+2020-10-26 20:40:53,209 INFO  com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:41:16,126 INFO  com.zingpoll.Users_TS01_Sign_Up - OS name = windows 10
+2020-10-26 20:41:19,301 INFO  com.zingpoll.Users_TS01_Sign_Up - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:41:31,460 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Pre-condition: Launch app
+2020-10-26 20:41:38,623 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 1: Input question content
+2020-10-26 20:41:39,223 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 2: Input 2 first answer options with images uploaded from your picture 
+2020-10-26 20:41:42,297 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - Step 3: Input more 2 new options with images uploaded from internet picture 
+2020-10-26 20:41:45,822 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - OS name = windows 10
+2020-10-26 20:41:49,464 INFO  com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll - ---------- QUIT BROWSER SUCCESS ----------
+2020-10-26 20:43:15,653 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Pre-condition: Launch app
+2020-10-26 20:43:21,761 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Input full valid data to create poll
+2020-10-26 20:43:24,352 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - Step: Click Poll Settings
+2020-10-26 20:43:25,837 INFO  com.zingpoll.Anonymous_User_TS02_Poll_Settings - VP: The settings of logged-in user 'Set voting time', 'Allow voters to edit their answers', 'Participants' do not display

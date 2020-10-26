@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 import commons.AbstractTest;
 import commons.GlobalConstants;
 import driverFactory.DriverManager;
-import io.qameta.allure.Description;
 import pageObjects.zingpoll.HomePageObject;
 import pageObjects.zingpoll.MailinatorPageObject;
 import pageObjects.zingpoll.ManagePollPageObject;
@@ -19,7 +18,7 @@ import pageObjects.zingpoll.ResultPageObject;
 import pageObjects.zingpoll.UpdatePollPageObject;
 import pageObjects.zingpoll.VotingPageObject;
 
-public class TS04_Settings_Poll_By_Anonymous_User extends AbstractTest {
+public class Anonymous_User_TS04_Poll_Settings extends AbstractTest {
 	WebDriver driver;
 	DriverManager driverManager;
 	HomePageObject homePage;

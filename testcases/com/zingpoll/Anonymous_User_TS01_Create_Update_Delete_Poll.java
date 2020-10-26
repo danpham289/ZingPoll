@@ -27,7 +27,7 @@ import pageObjects.zingpoll.VotingPageObject;
 
 @Epic("First Test")
 @Feature("Create/Update/Delete Poll")
-public class TS01_Create_Update_Delete_Poll_By_Anonymous_User extends AbstractTest {
+public class Anonymous_User_TS01_Create_Update_Delete_Poll extends AbstractTest {
 	WebDriver driver;
 	DriverManager driverManager;
 	HomePageObject homePage;
