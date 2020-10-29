@@ -44,7 +44,7 @@ public class HomePageObject extends AbstractPage{
 	
 	@Step("Click Create Poll Button and navigate to Voting Page")
 	public VotingPageObject clickToCreatePollButton() {
-		sleepInSecond(1);
+		sleepInSecond(2);
 		waitElementClickable(driver, HomePageUI.CREATE_POLL_BUTTON);			
 		clickToElementByJS(driver, HomePageUI.CREATE_POLL_BUTTON);		
 		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
@@ -111,6 +111,7 @@ public class HomePageObject extends AbstractPage{
 	public void clickToRegisterButton() {
 		waitElementClickable(driver, HomePageUI.REGISTER_BUTTON);
 		clickToElement(driver, HomePageUI.REGISTER_BUTTON);
+		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
 	}
 
 	@Step("Verify Activation Link Message is displayed")
@@ -215,6 +216,7 @@ public class HomePageObject extends AbstractPage{
 	}
 
 	public void inputToPollURLTextbox(String pollURL) {
+		scrollToElement(driver, HomePageUI.POLL_URL_TEXTBOX);
 		waitElementVisible(driver, HomePageUI.POLL_URL_TEXTBOX);
 		sendKeysToElement(driver, HomePageUI.POLL_URL_TEXTBOX, pollURL);
 	}

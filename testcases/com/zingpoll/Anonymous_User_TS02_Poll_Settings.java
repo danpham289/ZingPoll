@@ -28,7 +28,7 @@ public class Anonymous_User_TS02_Poll_Settings extends AbstractTest {
 	UpdatePollPageObject updatePollPage;
 	PollDeletePageObject pollDeletePage;
 	
-	String pollURL=null;
+	String pollURL;
 	
 
 	@Parameters({ "browser" })
@@ -102,7 +102,7 @@ public class Anonymous_User_TS02_Poll_Settings extends AbstractTest {
 	}
 	
 
-//	@Test
+	@Test
 	public void TC08_Optimize_Poll_Link_In_Setting_When_Create_Poll() {
 		log.info("Step: Optimize Poll_Link");
 		pollURL=String.valueOf(randomNumber()).substring(1);

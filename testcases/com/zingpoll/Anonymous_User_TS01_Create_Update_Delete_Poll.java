@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import commons.AbstractTest;
 import commons.GlobalConstants;
+import driverFactory.DriverFactory;
 import driverFactory.DriverManager;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -37,7 +38,7 @@ public class Anonymous_User_TS01_Create_Update_Delete_Poll extends AbstractTest 
 	UpdatePollPageObject updatePollPage;
 	PollDeletePageObject pollDeletePage;
 	
-	String pollURL=null;
+	String pollURL;
 	String managePollPassword;
 
 	@Parameters({ "browser" })
@@ -207,37 +208,6 @@ public class Anonymous_User_TS01_Create_Update_Delete_Poll extends AbstractTest 
 		
 		log.info("VP: Open the poll URL , it returns ... page (not implement, it is opening Error page) ");		
 	}
-	
-//	@Test(priority=4)
-	public void TC04_Create_Poll_With_Bunch_Of_Answer_Options(){
-		log.info("Pre-condition: Click ZingPoll icon");
-		homePage.clickToZingPollIcon();
-		
-		log.info("Step 1: Input question content");
-		homePage.inputToQuestionContentTextbox(GlobalConstants.NUMBER_QUESTION_CONTENT);
-
-		log.info("Step 2: Input 20 answer options");
-		int optionsNumber = 20;
-		for (int i = 1; i <= optionsNumber; i++) {
-			if (i < 3) {
-				homePage.inputToOption1Textbox(String.valueOf(randomNumber()));
-				homePage.inputToOption2Textbox(String.valueOf(randomNumber()));
-			} else if (i >= 3) {
-				homePage.inputToDynamicNewOptionTextbox(String.valueOf(randomNumber()));
-			}
-		}
-
-		log.info("Step 3: Input email");
-		homePage.inputToEmailTextbox(GlobalConstants.ANONYMOUS_EMAIL);
-
-		log.info("Step 4: Click Create Poll");
-		votingPage = homePage.clickToCreatePollButton();
-		
-		log.info("VP: The poll is created successfully");
-		verifyTrue(votingPage.isCreatePollSuccessMessageDisplayed());
-	}
-
-
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {

@@ -29,8 +29,8 @@ public class Anonymous_User_TS04_Poll_Settings extends AbstractTest {
 	PollDeletePageObject pollDeletePage;
 	ResultPageObject resultPage;
 
-	String pollPassword="123456";
-	String pollUrl="";
+	String pollPassword;
+	String pollUrl;
 
 	@Parameters({ "browser" })
 	@BeforeClass
@@ -39,6 +39,8 @@ public class Anonymous_User_TS04_Poll_Settings extends AbstractTest {
 		driver = getBrowserDriver(browserName,GlobalConstants.URL);
 		homePage = PageGeneratorManager.getHomePageObject(driver);
 		homePage.waitForJStoLoad(driver);
+		
+		pollPassword="123456";
 	}
 	
 	@Parameters({ "browser" })
@@ -75,17 +77,7 @@ public class Anonymous_User_TS04_Poll_Settings extends AbstractTest {
 
 		log.info("Step: Click Create Poll button and navigate to Voting page");
 		votingPage = homePage.clickToCreatePollButton();
-
-//		log.info("VP: Create Poll Successfully Msg displays and get poll url  ");
-//		verifyTrue(votingPage.isCreatePollSuccessMessageDisplayed());
-//		pollUrl = votingPage.getPollUrl();
-//		driver.quit();
-//		
-//		log.info("Step: Open Voting Poll page in the other session");
-//		driver = getBrowserDriver(browserName,GlobalConstants.URL + pollUrl);
-//		votingPage = PageGeneratorManager.getVotingPageObject(driver);
-//		votingPage.waitForJStoLoad(driver);
-//		
+		
 		log.info("VP: Require Password Alert message displays");
 		verifyTrue(votingPage.isRequirePasswordAlertMessageDisplayed());
 		

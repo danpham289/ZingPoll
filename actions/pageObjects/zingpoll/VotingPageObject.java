@@ -82,8 +82,8 @@ public class VotingPageObject extends AbstractPage {
 	public void clickToVoteButton() {
 		waitElementClickable(driver, VotingPageUI.VOTE_BUTTON);
 		clickToElement(driver, VotingPageUI.VOTE_BUTTON);
-		waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
-		//waitForJStoLoad(driver);
+		//waitElementInvisible(driver, AbstractPageUI.LOADING_ICON);
+		waitForJStoLoad(driver);
 	}
 
 	public boolean isRequiredEmailErrorMessageDisplayed() {

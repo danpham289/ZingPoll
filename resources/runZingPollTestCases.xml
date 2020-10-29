@@ -3,20 +3,14 @@
 	<listeners>
 		<listener class-name="commons.MethodListener" />
 		<listener class-name="reportConfig.AllureTestListener" /> 
-<!-- 		<listener class-name="org.uncommons.reportng.HTMLReporter" />  -->
-<!--  		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />  -->
 	</listeners>
 	<test name="RUN ON CHROME">
 		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.zingpoll.Anonymous_User_TS01_Create_Update_Delete_Poll" />
-			<class name="com.zingpoll.Anonymous_User_TS02_Poll_Settings" />
-			<class name="com.zingpoll.Anonymous_User_TS03_Poll_Settings" />
-			<class name="com.zingpoll.Anonymous_User_TS04_Poll_Settings" />
-			<class name="com.zingpoll.Search_TS01_Sorting_In_Search_Polls_Result" />
-			<class name="com.zingpoll.Users_TS01_Sign_Up" />
-		</classes>
+		<packages>
+			<package name="com.zingpoll" />
+		</packages>
 	</test>
+	
 <!-- 	<test name="RUN ON FIREFOX"> -->
 <!-- 		<parameter name="browser" value="firefox" /> -->
 <!-- 		<classes> -->

@@ -30,10 +30,10 @@ public class Anonymous_User_TS03_Poll_Settings extends AbstractTest {
 	PollDeletePageObject pollDeletePage;
 	ResultPageObject resultPage;
 
-	String pollURL = "";
-	int votingLimitNumber = 2;
+	String pollURL;
 	String managePollPassword;
-
+	int votingLimitNumber;
+	
 	@Parameters({ "browser" })
 	@BeforeClass
 	public void beforeClass(String browserName) {
@@ -41,6 +41,8 @@ public class Anonymous_User_TS03_Poll_Settings extends AbstractTest {
 		log.info("Pre-condition: Launch app");
 		homePage = PageGeneratorManager.getHomePageObject(driver);
 		homePage.waitForJStoLoad(driver);
+		
+		votingLimitNumber = 2;
 	}
 	
 	@Parameters({ "browser" })
